@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="e4325b042e798e411f5794b32a75c33e6b2d40424abbb373b3665bbaddd3e07c.html">Academy Choucair</a></span>
+                > <span class="truncate-60"><a
+                    href="2da34c8809bb894cc0802645bea1b63a115b06ddf7b0f54a39c27057c36fc71f.html">Registrarme la pagina uTest </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-04-2022 08:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Academy Choucair </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario no registrado, quiero registrarme en la uTest con el fin de probar
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registrarme la pagina uTest
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b02513b4b91cf8cd2b6a3de82e28fd3a8053803fab9fbe849b5ac6119eeb61f0.png" title=" Given Dado que Juan quiere probar su codigo automatizacion abrimos la pagina Utest.com" width="1920"/>
+                <img src="b02513b4b91cf8cd2b6a3de82e28fd3a8053803fab9fbe849b5ac6119eeb61f0.png" title=" Diana open up" width="1920"/>
+                <img src="b02513b4b91cf8cd2b6a3de82e28fd3a8053803fab9fbe849b5ac6119eeb61f0.png" title=" Diana opens the Utest page" width="1920"/>
+                <img src="b02513b4b91cf8cd2b6a3de82e28fd3a8053803fab9fbe849b5ac6119eeb61f0.png" title=" Diana open up (completed)" width="1920"/>
+                <img src="b02513b4b91cf8cd2b6a3de82e28fd3a8053803fab9fbe849b5ac6119eeb61f0.png" title=" Given Dado que Juan quiere probar su codigo automatizacion abrimos la pagina Utest.com (completed)" width="1920"/>
+                <img src="c0d52ee00b8f7ee30b6e23ed93b3bf0cdb2c7078e2ab45a7fa71be912a82d44a.png" title=" When Cuando abre el formulario registro, se llenan todos los campos" width="1920"/>
+                <img src="c0d52ee00b8f7ee30b6e23ed93b3bf0cdb2c7078e2ab45a7fa71be912a82d44a.png" title=" Diana join today" width="1920"/>
+                <img src="c0d52ee00b8f7ee30b6e23ed93b3bf0cdb2c7078e2ab45a7fa71be912a82d44a.png" title=" Diana clicks on Boton para iniciar el registro" width="1920"/>
+                <img src="0690c788aee46afc997d796bcfe3d7e3e66324c5372d3c550f4c9b95ff274bf6.png" title=" Diana enters 'Juan David' into Campo para diligenciar primer nombre" width="1920"/>
+                <img src="ccd635d7fa1a7c29ccccf9831e716f2640091f4f46fe79074bcfb4324fbef2e7.png" title=" Diana enters 'Gutierrez Rodriguez' into Campo para diligenciar apellido" width="1920"/>
+                <img src="a8a4be55ac0eb0b6ac497a6e10340d3facdf554ccd1f335c65793d76c3f5c9e9.png" title=" Diana enters 'jdgutierrez06@gmail.com' into Campo para diligenciar email" width="1920"/>
+                <img src="cf0efa2ce24a47fb7387f14c2382e5aecf4fe0b56d08e6a14f979d869d2b6caf.png" title=" Diana select May on Seleccionar el mes" width="1920"/>
+                <img src="338ac298cfd8bd0676fbec35bc9f0ac04966dfc2e51392a59b1a6650b0abbf94.png" title=" Diana select 29 on Seleccionar el dia" width="1920"/>
+                <img src="1dcdc560d111c678c98fc20cf90050b066ee4b29044ce22f9dc6083c78e6204e.png" title=" Diana select 2000 on Seleccionar el a&Atilde;&plusmn;o" width="1920"/>
+                <img src="06d1b00ec47f9771770e6bc8099968f180d920d01d5b91caf9c3d01b3768d16d.png" title=" Diana clicks on Boton para seguir el registro parte 1" width="1920"/>
+                <img src="3028b7ee5090627d475a297cfcf8673fe8a1c018c3610994eee411245450a337.png" title=" Diana clicks on Boton para seguir registro parte 2" width="1920"/>
+                <img src="6a517c10bc2d6dba3ef3ccccd472e741caeb939bedbc06f6f5c6c7e732299dbd.png" title=" Diana clicks on Boton para seguir registro parte 3" width="1920"/>
+                <img src="8920ec41ab3f81f92ccb3098a0eb1245065c817dec41e2087a1d35b7f1fbec51.png" title=" Diana enters 'Juandavid29' into Campo para digitar la contrase&Atilde;&plusmn;a" width="1920"/>
+                <img src="7ed4157927cc84fc7c67609649102443444365f7a03dedd1e6cb61f18fa733ef.png" title=" Diana enters 'Juandavid29' into Campo para confirmar la contrase&Atilde;&plusmn;a" width="1920"/>
+                <img src="995ff8751f061d0ac7d8dde43d8751d20cfc71d210462cc6bdc8e162b3c51386.png" title=" Diana clicks on Chekear si acepta stay informed" width="1920"/>
+                <img src="198baaa21378afcf1d25b520b8c1775a2e53345126aee50bdce7060e8f21a013.png" title=" Diana clicks on Chekear read and accept" width="1920"/>
+                <img src="de7ecd00d6e8f0bf211cfa53ae862d431adb4fc66e71df45e81fd04835f328a2.png" title=" Diana clicks on Chekear privacy &amp; security" width="1920"/>
+                <img src="3cd7c76c052aa4f677871aa30e3c88949815c226b7f130ee24873d3109d5349b.png" title=" Diana clicks on Boton para terminar el registro" width="1920"/>
+                <img src="3cd7c76c052aa4f677871aa30e3c88949815c226b7f130ee24873d3109d5349b.png" title=" Diana join today (completed)" width="1920"/>
+                <img src="3cd7c76c052aa4f677871aa30e3c88949815c226b7f130ee24873d3109d5349b.png" title=" When Cuando abre el formulario registro, se llenan todos los campos (completed)" width="1920"/>
+                <img src="b9b0ee48a4233a1f20cc7324425b51c9dac497c06a13e94743de4f656f239009.png" title=" Then Luego se registra correctamente el usuario: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
