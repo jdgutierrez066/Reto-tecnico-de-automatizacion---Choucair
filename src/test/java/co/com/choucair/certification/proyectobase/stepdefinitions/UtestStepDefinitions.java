@@ -31,12 +31,14 @@ public class UtestStepDefinitions {
     public void cuandoAbreElFormularioRegistroSeLlenanTodosLosCampos(List<UtestData> utestData) throws Exception {
         OnStage.theActorInTheSpotlight().attemptsTo(JoinToday.onThePage(utestData.get(0).getStrFirtsName(),
                 utestData.get(0).getStrLastName(), utestData.get(0).getStrEmail(),utestData.get(0).getStrMoth(),
-                utestData.get(0).getStrDay(),utestData.get(0).getStrYear(), utestData.get(0).getStrPassword(),
-                utestData.get(0).getStrRepassword()));
+                utestData.get(0).getStrDay(),utestData.get(0).getStrYear(),utestData.get(0).getStrCity(),utestData.get(0).getStrZip(),
+                utestData.get(0).getStrCountry(),utestData.get(0).getStrComputer(),utestData.get(0).getStrVersion(),utestData.get(0).getStrLanguage(),
+                utestData.get(0).getStrMobileDevice(),utestData.get(0).getStrModel(),utestData.get(0).getStrOperatingSystem(),
+                utestData.get(0).getStrPassword(), utestData.get(0).getStrRepassword()));
     }
 
     @Then("^Luego se registra correctamente el usuario encuentra el mensaje$")
-    public void luegoSeRegistraCorrectamenteElUsuarioEncuentraElMensajeWelcomeToTheWorldSLargestCommunityOfFreelanceSoftwareTesters(List<UtestData> utestData) throws Exception {
+    public void luegoSeRegistraCorrectamenteElUsuarioEncuentraElMensaje(List<UtestData> utestData) throws Exception {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(utestData.get(0).getQuestion())));
     }
 }
